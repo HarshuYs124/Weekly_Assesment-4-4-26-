@@ -9,10 +9,10 @@ def setup_and_teardown():
     env = config["qa"] # YAML has with qa
     base_url = env["base_url"]
 
-    # Setup (Before test)
+    # Setup 
     driver = webdriver.Chrome()
     driver.get(base_url)
     yield driver
-    # teardown (After Test)
+    # teardown 
     driver.quit()
 
