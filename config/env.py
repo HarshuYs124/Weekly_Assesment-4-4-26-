@@ -1,5 +1,5 @@
-import yaml
-import os
+import yaml # Used to read YAML configuration files
+import os # Used for file path handling
 class ConfigReader:
 
     @staticmethod
