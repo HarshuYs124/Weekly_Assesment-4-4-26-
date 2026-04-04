@@ -10,16 +10,21 @@ class LoginPage(BasePage):
     login_button = (By.XPATH, "//input[@value='Log in']")
 
     def __init__(self, driver):
+        # initialize loginpage with driver
         super().__init__(driver)
 
     def click_login(self):
+        # click on login link
         self.click(self.login_link)
 
     def enter_email(self, email):
+        # enter email into email field
         self.enter_text(self.email, email)
 
     def enter_password(self, password):
+        # enter password into password field
         self.enter_text(self.password, password)
 
     def click_login_button(self):
+        # Click on login button
         self.click(self.login_button)
